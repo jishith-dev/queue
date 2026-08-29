@@ -1,0 +1,142 @@
+struct Queue {
+   List<int> ints
+   List<bool> bools
+   List<string> strings
+   List<double> doubles
+   List<long> longs
+   List<byte> bytes
+
+   enqueueInt(int v) void {
+    this.ints.push(v)
+}
+
+enqueueBool(bool v) void {
+    this.bools.push(v)
+}
+
+enqueueString(string v) void {
+    this.strings.push(v)
+}
+
+enqueueDouble(double v) void {
+    this.doubles.push(v)
+}
+
+enqueueLong(long v) void {
+    this.longs.push(v)
+}
+
+enqueueByte(byte v) void {
+    this.bytes.push(v)
+}
+   
+   dequeueInt() int {
+    int value = this.ints[0]
+    this.ints.removeAt(0)
+    return value
+}
+
+dequeueBool() bool {
+    bool value = this.bools[0]
+    this.bools.removeAt(0)
+    return value
+}
+
+dequeueDouble() double {
+    double value = this.doubles[0]
+    this.doubles.removeAt(0)
+    return value
+}
+
+dequeueLong() long {
+    long value = this.longs[0]
+    this.longs.removeAt(0)
+    return value
+}
+
+dequeueByte() byte {
+    byte value = this.bytes[0]
+    this.bytes.removeAt(0)
+    return value
+}
+
+dequeueString() string {
+    string value = this.strings[0]
+    this.strings.removeAt(0)
+    return value
+}
+
+peekInt() int {
+    return this.ints[0]
+}
+
+peekBool() bool {
+    return this.bools[0]
+}
+
+peekDouble() double {
+    return this.doubles[0]
+}
+
+peekLong() long {
+    return this.longs[0]
+}
+
+peekByte() byte {
+    return this.bytes[0]
+}
+
+peekString() string {
+    return this.strings[0]
+}
+
+isEmptyInt() bool {
+    return this.ints.length == 0
+}
+
+sizeInt() int {
+    return this.ints.length
+}
+
+isEmptyBool() bool {
+    return this.bools.length == 0
+}
+
+sizeBool() int {
+    return this.bools.length
+}
+
+isEmptyDouble() bool {
+    return this.doubles.length == 0
+}
+
+sizeDouble() int {
+    return this.doubles.length
+}
+
+isEmptyLong() bool {
+    return this.longs.length == 0
+}
+
+sizeLong() int {
+    return this.longs.length
+}
+
+isEmptyByte() bool {
+    return this.bytes.length == 0
+}
+
+sizeByte() int {
+    return this.bytes.length
+}
+
+isEmptyString() bool {
+    return this.strings.length == 0
+}
+
+sizeString() int {
+    return this.strings.length
+}
+}
+
+export (Queue)
