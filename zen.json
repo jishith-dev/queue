@@ -4,6 +4,6 @@
   "author": "Jishith-dev",
   "repo": "https://github.com/Jishith-dev/queue",
   "description": "FIFO queue collection for Zen with type-specific operations for int, bool, double, long, byte, and string.",
-  "bin": "main.zen",
+  "bin": "lib.zen",
   "dependencies": {}
 }
